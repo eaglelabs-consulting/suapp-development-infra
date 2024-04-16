@@ -2,6 +2,8 @@
 
 A repository to easily run a local infrastructure for Suave Applications Development.
 
+This setup is extracted from [suapp-examples](https://github.com/flashbots/suapp-examples/tree/bf735798f18821f080da90f221b40ee60f2b60a2).
+
 ## Start the local devnet
 
 ### TL;DR
@@ -27,3 +29,16 @@ A repository to easily run a local infrastructure for Suave Applications Develop
     # Tear-down
     make devnet-down
     ```
+
+### Details
+
+Above setup will (among other things) deploy:
+
+- SUAVE devnet RPC on `http://127.0.0.1:8545`
+- Eth devnet RPC on `http://127.0.0.1:8555`
+- SUAVE explorer on `http://127.0.0.1:8080`
+- Eth explorer on `http://127.0.0.1:18080`
+- MEV Boost Relay Overview on `http://127.0.0.1:9060`
+
+All Eth components are provisioned by `ethereum-package` from kurtosis.
+Please check `https://github.com/kurtosis-tech/ethereum-package` for more info.
